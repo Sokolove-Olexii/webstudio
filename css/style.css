@@ -81,8 +81,17 @@ header{
 .header-right{
     display: flex;
     justify-content: space-between;
-    width: 307px;
+    width: 333px;
     align-items: center;
+}
+
+.svg-mail{
+    margin-right:10px;
+    fill: #757575;
+}
+
+.header-right-content:hover .svg-mail{
+    fill: #2196F3;
 }
 
 .header-right-content{
@@ -94,14 +103,6 @@ header{
     color: #2196F3;
 }
 
-/* .header-right>.header-right-content::before{
-    display: flex;
-    background-repeat: no-repeat;
-    content: '';
-    background-image: url('../mail-nhov.png');
-    width: 16px;
-    height: 12px;
-} */
 
 /* main */
 .hero{
@@ -157,16 +158,16 @@ header{
 
 .bg-img{
     display: flex;
-    background-image: url('../images/trans.png');
+    background-image: url('../images/Icons/ant.svg');
     background-repeat: no-repeat;
     margin: 0 auto;
-    width: 65px;
+    width: 70px;
     height: 70px;
 }
 
 .bg-img-2{
     display: flex;
-    background-image: url('../images/clock.png');
+    background-image: url('../images/Icons/clock.svg');
     background-repeat: no-repeat;
     margin: 0 auto;
     width: 70px;
@@ -175,7 +176,7 @@ header{
 
 .bg-img-3{
     display: flex;
-    background-image: url('../images/diagram.png');
+    background-image: url('../images/Icons/diag.svg');
     background-repeat: no-repeat;
     margin: 0 auto;
     width: 70px;
@@ -184,7 +185,7 @@ header{
 
 .bg-img-4{
     display: flex;
-    background-image: url('../images/astronaut.png');
+    background-image: url('../images/Icons/astr.svg');
     background-repeat: no-repeat;
     margin: 0 auto;
     width: 70px;
@@ -282,7 +283,7 @@ color: #212121;
 
 .team-li{
     background-color: white;
-    padding-bottom: 30px;
+    padding-bottom: 42px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 
@@ -332,18 +333,7 @@ border-radius: 0px 0px 4px 4px;
     color: #212121;
 }
 
-.clients-list-cards{
-    display: flex;
-}
 
-.button-list-card{
-
-    width: 170px;
-    height: 92px;
-    display: flex;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
 
 .clients-ul{
     display: flex;
@@ -357,8 +347,8 @@ border-radius: 0px 0px 4px 4px;
 
 /* ---------------footer----------------- */
 .footer{
-    background:#2F303A;;
-    padding: 60px 0 60px 215px;
+    background:#2F303A;
+    padding: 60px 0 60px;
 }
 
 .studio{
@@ -388,7 +378,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     display: block;
-    }
+}
 
 .contact-list:hover{
     color: #2196f3;
@@ -399,10 +389,59 @@ letter-spacing: 0.03em;
 }
 
 .footer-main{
+    margin: 0 215px 0 215px;
     width: 1200px;
     display: flex;
+}
+
+.footer-left{
+    width: 231px;
+}
+
+.footer-h2{
+    color: #FFF;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-mail-list{
+    margin-top: 20px;
+}
+
+.footer-right{
+    padding-top: 12px;
+    margin-left: 70px;
+    width: 206px;
+    height: 80px;
+}
+
+.footer-svg-content{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.footer-list-a{
+    border-radius: 50%;
+    background: rgba(205, 214, 219, 0.1);
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px 12px 12px;
+}
+
+.footer-list-a:hover{
+    border-radius: 50%;
+    background-color: #2196F3;
+}
+
+.footer-mail-list{
     justify-content: space-between;
-    padding: 24px 0 ;
+    display: flex;
 }
 
 
@@ -435,3 +474,113 @@ letter-spacing: 0.03em;
     text-decoration: none;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.svg-contacts{
+    padding: 12px 12px 12px 12px;
+}
+
+.svg-contacts:hover .svg-icons{
+    fill: #FFFFFF;
+}
+
+.svg-contacts:hover{
+    width: 44px;
+    display: flex;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #2196F3;
+}
+
+.svg-icons{
+    fill: #AFB1B8;
+    height: 20px;
+    width: 20px;
+    display: flex;
+}
+
+.team-social-media{
+    margin-top:16px;
+    padding: 0px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.svg{
+    display: flex;
+    margin: 0 auto;
+    fill: #757575;
+}
+
+.button-list-card:hover .svg{
+    fill: #2196F3;
+}
+
+.button-list-card{
+    padding: 16px 0 16px;
+    text-decoration: none;
+    width: 170px;
+    height: 92px;
+}
+
+.button-list-card:hover{
+    color: #2196F3;
+}
+
+
+.clients-list-cards:hover{
+    border: 1px solid #2196F3;
+}
+
+.clients-list-cards{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+} 
