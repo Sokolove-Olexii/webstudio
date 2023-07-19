@@ -52,6 +52,7 @@ header{
     color: black;
     text-decoration: none;
 }
+
 .Web{
     color: #2196F3;
 }
@@ -72,6 +73,44 @@ header{
 .nav-list-text:hover{
     color:#2196F3;
 }
+
+.nav-list-link{
+    position: relative;
+}
+
+
+
+/* ----------------- HEADER-STICKS-TASK ----------------------*/
+
+.nav-list-link:hover .header-stick{
+    top: 46px;
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+}
+
+.nav-list-link:hover .header-stick-portfolio{
+    top: 46px;
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+}
+
+.nav-list-link:hover .header-stick-contacts{
+    top: 46px;
+    position: absolute;
+    width: 68px;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+}
+
+
+/* ----------------- HEADER-STICKS-TASK ----------------------*/
 
 .nav-list a {
     text-decoration: none;
@@ -245,8 +284,30 @@ header{
 }
 
 .li-img{
+    position: relative;
+}
+
+
+.image-text{
+    padding: 27px 0 27px;
+    top: 224px;
+    position: absolute;
     width: 370px;
-    height: 294px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.80);
+}
+
+
+.text{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 .section-team{
@@ -290,6 +351,46 @@ header{
 
 .work-list{
     list-style: none;
+}
+
+.svg-contacts{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-contacts:hover .svg-icons{
+    fill: #FFFFFF;
+}
+
+.svg-contacts:hover{
+    width: 44px;
+    display: flex;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #2196F3;
+}
+
+.svg-icons{
+    fill: #AFB1B8;
+    height: 20px;
+    width: 20px;
+    display: flex;
+}
+
+.team-social-media{
+    margin-top:16px;
+    padding: 0px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.svg{
+    display: flex;
+    margin: 0 auto;
+    fill: #AFB1B8;
 }
 
 .team-list-title{
@@ -382,7 +483,6 @@ header{
     display: block;
 }
 
-
 .contact-list:not(:last-child){
     padding-bottom: 9px;
 }
@@ -445,96 +545,6 @@ header{
     display: flex;
 }
 
-
-/* ---------------- */
-
-.nav-list a:hover {
-    color: #2196f3;
-}
-
-.photo-do{
-    width: 370px;
-    height: 294px;
-}
-
-.team-list{
-    list-style-type: none;
-    /* в ul взяти людей */
-}
-
-.team-list-img{
-    width: 270px;
-    height: 260px;
-}
-
-.nav-list-text{
-    text-decoration: none;
-}
-
-.nav-list-2 a{
-    text-decoration: none;
-    color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.svg-contacts{
-    width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.svg-contacts:hover .svg-icons{
-    fill: #FFFFFF;
-}
-
-.svg-contacts:hover{
-    width: 44px;
-    display: flex;
-    height: 44px;
-    border-radius: 50%;
-    background-color: #2196F3;
-}
-
-.svg-icons{
-    fill: #AFB1B8;
-    height: 20px;
-    width: 20px;
-    display: flex;
-}
-
-.team-social-media{
-    margin-top:16px;
-    padding: 0px 32px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.svg{
-    display: flex;
-    margin: 0 auto;
-    fill: #AFB1B8;
-}
-
 .button-list-card:hover .svg{
     fill: #2196F3;
 }
@@ -562,3 +572,28 @@ header{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 } 
+
+/* ---------------- */
+
+.nav-list a:hover {
+    color: #2196f3;
+}
+
+.team-list{
+    list-style-type: none;
+    /* в ul взяти людей */
+}
+
+.team-list-img{
+    width: 270px;
+    height: 260px;
+}
+
+.nav-list-text{
+    text-decoration: none;
+}
+
+.nav-list-2 a{
+    text-decoration: none;
+    color: #fff;
+}
