@@ -591,22 +591,18 @@ header {
     display: flex;
 }
 
-.button-list-card:hover .svg {
+.clients-list-cards:hover .svg {
     transition: fill 250ms;
     fill: #2196F3;
 }
 
 .button-list-card {
-    padding: 16px 0 16px;
     text-decoration: none;
-    width: 170px;
-    height: 92px;
 }
 
 .button-list-card:hover {
     color: #2196F3;
 }
-
 
 .clients-list-cards:hover {
     transition: border 250ms;
@@ -617,6 +613,8 @@ header {
     width: 170px;
     height: 92px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -774,15 +772,11 @@ header {
 }
     
 .modal{
-    display: none;
     max-width: 528px;
-    max-height: 581px;
-    position:fixed;
-    top: 23%;
-    left: 32%;
+    position: absolute;
     background-color: #fff;
     border-radius: 5px;
-    padding:40px;
+    padding: 40px;
     z-index: 100;
 }
     
@@ -811,10 +805,6 @@ header {
     background: #188CE8;
     outline: none;
 }
-    
-.is-visible{
-    display: block !important;
-} 
 
 .modal-link{
     color: #2196F3;
@@ -899,7 +889,7 @@ header {
 .is-hidden {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .modal-label:hover .svg-label {
